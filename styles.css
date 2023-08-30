@@ -18,7 +18,7 @@
 }
 #header-img{
   height: inherit;
-  max-height: 80px;
+  max-height: 100%;
 }
 
 nav{
@@ -124,6 +124,31 @@ form{
   text-decoration: none;
   color: pink;
   text-align: center;
+}
+.hidden-nav-div{
+  display: hidden;
+  position: relative;
+  top:-80px;
+}
+/*Media queries handling different sized screens. Text size changes, and the grid layout for 
+the products collapses to a single column for small screens*/
+
+@media(min-width: 800px){
+  #links{
+    margin-right: 15vw;
+  }
+  #header{
+    height: 110px;
+    max-height: 110px;
+  }
+  #header-img{
+    margin-left: 15vw;
+    height: 110px;
+  }
+  main{
+    max-width: 60vw;
+  }
+  }
 }
 
 @media (max-width: 600px){

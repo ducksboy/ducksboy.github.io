@@ -14,20 +14,23 @@
     <title>Morlee Makes</title>
   </head>
   <body>
+    <!--The header below includes a logo and the navigation bar-->
     <header id="header">
       <img id="header-img" src="https://images.squarespace-cdn.com/content/v1/631cf7e0dbdc564c322944b7/23287472-9e9c-42c9-a179-4a1b14f23622/IMG_0008.jpg?format=1500w">
       <nav id="nav-bar">
         <ul id="links">
-          <li><a class="nav-link" href="#about-section">About</a></li>
-          <li><a class="nav-link" href="#products-section">Products</a></li>
-          <li><a class="nav-link" href="#order-process-section">Order Process</a></li>
-          <li><a class="nav-link" href="#contact-section">Contact</a></li>
+          <li><a class="nav-link" href="#about-section-nav">About</a></li>
+          <li><a class="nav-link" href="#products-section-nav">Products</a></li>
+          <li><a class="nav-link" href="#order-process-section-nav">Order Process</a></li>
+          <li><a class="nav-link" href="#contact-section-nav">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div id="about-section">
+      <div class="hidden-nav-div" id="about-section-nav"></div> <!--A hidden div put here for the navigation links to work well, so the nav bar doesn't hide the top of the section. There is one at the front of each section. Styled using CSS to be hidden and sit 80px above the section, which is the height of the nav bar-->
+
+      <div id="about-section"> <!-- Section detailing what the company is all about -->
         <h1>Beautiful keepsakes for your family</h1>
         <p class="text">My name is Diana, and I am the creator of Morlee Makes, a small business selling hand-crafted keepsakes that are designed to celebrate and honor your loved ones.</p>
         <p class="text">I trained as a graphic designer before marrying my husband and becoming a mother to two beautiful children. I later discovered a love for caligraphy, which I now feature in many of my products.</p>
@@ -37,14 +40,17 @@
 
       </div>
 
-      <div id="products-section"> <!--section detailing the products on offer-->
-        
-        <div class="product">
+             <!--section detailing the products on offer-->
+
+      <div class="hidden-nav-div" id="products-section-nav"></div>
+      <div id="products-section">
+          <h1>My Hand-Crafted Products</h1>
+          <div class="product">
           <h2>Welcome Plaques</h2>
           <img 
           class="product-image"
-          src="https://images.squarespace-cdn.com/content/v1/631cf7e0dbdc564c322944b7/5d862bee-3fe6-4e1c-ba25-d4d419048494/IMG_9905.JPG?format=1500w"
-          alt="a welcome plaque"
+          src="Images/Bach-board.jpg"
+          alt="A wooden plaque saying 'Welcome to our Bach'"
           loading="lazy">
           <p class="text">Display a welcome plaque at your home, bach or farm to create a warm atmosphere for your guests.</p>
           <p class="text">Price: $60</p>
@@ -54,7 +60,7 @@
           <h2>Custom Name Plaques</h2>
           <img 
           class="product-image"
-          src="https://images.squarespace-cdn.com/content/v1/631cf7e0dbdc564c322944b7/5d862bee-3fe6-4e1c-ba25-d4d419048494/IMG_9905.JPG?format=1500w"
+          src="Images/Custom-board.jpg"
           alt="a wooden plaque with a family name on it"
           loading="lazy">
           <p class="text">These plaques are a wonderful way to celebrate the forming of a family. They can be used to commemorate special events such a wedding or the birth of a child.</p>
@@ -65,7 +71,7 @@
           <h2>Macrame Rainbows</h2>
           <img 
           class="product-image"
-          src="https://images.squarespace-cdn.com/content/v1/631cf7e0dbdc564c322944b7/5d862bee-3fe6-4e1c-ba25-d4d419048494/IMG_9905.JPG?format=1500w"
+          src="Images/Rainbows.jpg"
           alt="a macrame rainbow"
           loading="lazy">
           <p class="text">Rainbows make beautiful decorative pieces for hanging on the walls of a child's bedroom or play area. You can select the colors you would like and the order in which they appear in the rainbow.</p>
@@ -82,6 +88,8 @@
         </div>
       </div>
 
+             <!--section detailing how to make an order-->
+      <div class="hidden-nav-div" id="order-process-section-nav"></div>
       <div id="order-process-section">
         <h1>What can I create for you?</h1>
         <p>To make an order, simply fill out the form below with your request. Make sure to include the specific details you would like for any custom orders, such as the correct spelling of names or the particular colours you would like on your rainbow.</p>
@@ -103,6 +111,8 @@
         </form>
       </div>
 
+             <!--section with links to social media sites-->
+      <div class="hidden-nav-div" id="contact-section-nav"></div>
       <div id="contact-section">
         <h1>Connect with me via Social Media</h1>
         <div class="social-icons">
@@ -115,7 +125,8 @@
           <a href="https://www.linkedin.com/in/diana-smith-ba867071/?originalSubdomain=nz">
             <i class="fab fa-linkedin-in"></i>
           </a>
-      </div>
+        </div>
+        <p>To keep up with what's happening in my business, follow me on Instagram or Facebook where I have updates of new products, special deals, and when I'll next be at the Morrinsville Market.</p>
     </main>
   </body>
 </html>
